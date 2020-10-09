@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialogfon"
+    android:background="@drawable/background_message_img"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnclose"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:text="X"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="end"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textdescriptionEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/leveloneEnd"
+                android:textColor="@color/black95"
+                android:textSize="24sp" />
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btncontinue"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:text="@string/textcontinue"
+            android:textColor="@color/black95"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>
